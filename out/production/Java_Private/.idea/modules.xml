@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Java_Private.iml" filepath="$PROJECT_DIR$/Java_Private.iml" />
+      <module fileurl="file://$PROJECT_DIR$/buoi2/buoi2.iml" filepath="$PROJECT_DIR$/buoi2/buoi2.iml" />
     </modules>
   </component>
 </project>

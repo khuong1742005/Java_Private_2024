@@ -35,11 +35,10 @@ public class Buoi1 {
     {
         private final int n;
         public Bai2(int n){this.n = n;}
-        public int tinhTich(){
-            int tmp = n;
+        public int tinhTich() {
+            int tmp = (n < 0) ? -n : n;
             int ans = 1;
-            while(tmp > 0)
-            {
+            while (tmp > 0) {
                 ans *= tmp % 10;
                 tmp /= 10;
             }
@@ -86,7 +85,6 @@ public class Buoi1 {
         int nbai2 = sc.nextInt();
         Bai2 b2 = new Bai2(nbai2);
         out.println("Tich cac chu so: " + b2.tinhTich());
-
         out.println("Bai 3: Nhap so phan tu: ");
         int nbai3 = sc.nextInt();
         int[] a = new int[nbai3];
