@@ -40,7 +40,7 @@ public class Main {
                 } else if (ss.charAt(2) == '0') {
                     return donVi[s / 100] + " trăm " + donVi[ss.charAt(1) - 48] + " mươi";
                 }
-                return donVi[s / 100] + " trăm" + (s % 100 != 0 ? " " + ans : "");
+                return donVi[s / 100] + " trăm " + (s % 100 != 0 ? " " + ans : "");
             }
             return "";
         }
