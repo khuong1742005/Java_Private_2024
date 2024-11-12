@@ -15,8 +15,7 @@ public class BookFunction {
         scanner.nextLine();
         System.out.println("Nhap ten sach: ");
         String tenSach = scanner.nextLine();
-        System.out.println("Nhap ten tac gia: ");
-        String tenTacGia = scanner.nextLine();
+        TacGia tg = TacGiaFuncion.enterTacGia();
         System.out.println("Nhap nam san xuat: ");
         int namSanXuat = scanner.nextInt();
         scanner.nextLine();
@@ -25,7 +24,7 @@ public class BookFunction {
         System.out.println("Nhap gia tien: ");
         double giaTien = scanner.nextDouble();
 
-        return new Book(maSach, tenSach, tenTacGia, namSanXuat, tomTatNoiDung, giaTien);
+        return new Book(maSach, tenSach, tg, namSanXuat, tomTatNoiDung, giaTien);
     }
 
     public static void displayBook(Book book) {
@@ -43,7 +42,7 @@ public class BookFunction {
                 Book newBook = enterBook();
                 book.setMaSach(newBook.getMaSach());
                 book.setTenSach(newBook.getTenSach());
-                book.setTenTacGia(newBook.getTenTacGia());
+                book.setTacGia(TacGiaFuncion.editTacGia());
                 book.setNamSanXuat(newBook.getNamSanXuat());
                 book.setTomTatNoiDung(newBook.getTomTatNoiDung());
                 book.setGiaTien(newBook.getGiaTien());

@@ -1,26 +1,25 @@
 package buoi4;
 
 public class Book {
-    private int maSach;
-    private String tenSach;
-    private String tenTacGia;
-    private int namSanXuat;
-    private String tomTatNoiDung;
-    private double giaTien;
+    protected int maSach;
+    protected String tenSach;
+    protected TacGia tacGia;
+    protected int namSanXuat;
+    protected String tomTatNoiDung;
+    protected double giaTien;
 
     public Book() {
     }
 
-    ;
-
-    public Book(int maSach, String tenSach, String tenTacGia, int namSanXuat, String tomTatNoiDung, double giaTien) {
+    public Book(int maSach, String tenSach, TacGia tacGia, int namSanXuat, String tomTatNoiDung, double giaTien) {
         this.maSach = maSach;
         this.tenSach = tenSach;
-        this.tenTacGia = tenTacGia;
+        this.tacGia = tacGia;
         this.namSanXuat = namSanXuat;
         this.tomTatNoiDung = tomTatNoiDung;
         this.giaTien = giaTien;
     }
+
 
     public int getMaSach() {
         return maSach;
@@ -38,12 +37,12 @@ public class Book {
         this.tenSach = tenSach;
     }
 
-    public String getTenTacGia() {
-        return tenTacGia;
+    public TacGia getTacGia() {
+        return tacGia;
     }
 
-    public void setTenTacGia(String tenTacGia) {
-        this.tenTacGia = tenTacGia;
+    public void setTacGia(TacGia tacGia) {
+        this.tacGia = tacGia;
     }
 
     public int getNamSanXuat() {
@@ -70,12 +69,13 @@ public class Book {
         this.giaTien = giaTien;
     }
 
+
     @Override
     public String toString() {
         return "Book{" +
                 "maSach=" + maSach +
-                ", tenSach='" + tenSach + '\'' +
-                ", tenTacGia='" + tenTacGia + '\'' +
+                ", tenSach='" + tenSach + '\''+ ", 1" +
+                tacGia +
                 ", namSanXuat=" + namSanXuat +
                 ", tomTatNoiDung='" + tomTatNoiDung + '\'' +
                 ", giaTien=" + giaTien +
